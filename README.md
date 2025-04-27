@@ -1,19 +1,28 @@
-# pokedex
 
-A new Flutter project created with FlutLab - https://flutlab.io
+# App Pokedex
 
-## Getting Started
+O App Pokedex é um projeto desenvolvido em Flutter com dart. A aplicação consiste em colocar em prática o conhecimento de APIs e autenticação com firebase.
 
-A few resources to get you started if this is your first Flutter project:
+## Stack utilizada
 
-- https://flutter.dev/docs/get-started/codelab
-- https://flutter.dev/docs/cookbook
+**Front-end:** Flutter (widgets em Dart)
 
-For help getting started with Flutter, view our
-https://flutter.dev/docs, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Back-end:** Dart, Firebase
 
-## Getting Started: FlutLab - Flutter Online IDE
 
-- How to use FlutLab? Please, view our https://flutlab.io/docs
-- Join the discussion and conversation on https://flutlab.io/residents
+## Demonstração
+
+Login
+![Demonstração Login](https://github.com/Richardy-Rodrigues/app_pokedex/blob/master/assets/login.gif?raw=true)
+
+Cadastro Usuário
+![Demonstração cadastro usuário](https://github.com/Richardy-Rodrigues/app_pokedex/blob/master/assets/cadastro_usu%C3%A1rio.gif?raw=true)
+## Rodando web
+
+Copie e cole o link em um navegador, faça o login e rode o projeto
+
+```bash
+  https://flutlab.io/editor/28322e70-9230-498b-8776-2d436a8889f1
+```
+
+
