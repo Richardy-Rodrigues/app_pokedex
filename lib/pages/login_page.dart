@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -116,7 +117,23 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   const Text('Não tem um cadastro?'),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          PageRouteBuilder(
+                            pageBuilder:
+                                (context, animation, secondaryAnimation) =>
+                                    const RegisterPage(),
+                            transitionsBuilder: (context, animation,
+                                secondaryAnimation, child) {
+                              var fadeAnimation = Tween(begin: 0.0, end: 1.0)
+                                  .animate(animation);
+                              return FadeTransition(
+                                  opacity: fadeAnimation, child: child);
+                            },
+                          ),
+                        );
+                      },
                       child: const Text(
                         'Cadastre-se',
                         style: TextStyle(color: Colors.blue),
