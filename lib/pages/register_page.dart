@@ -56,7 +56,7 @@ class _RegisterPageState extends State<RegisterPage> {
             children: <Widget>[
               Center(
                 child: Image.asset(
-                  'assets/squirtle1.png',
+                  'assets/squirtle2.png',
                   height: 200,
                   width: 200,
                 ),
@@ -67,7 +67,7 @@ class _RegisterPageState extends State<RegisterPage> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  'Login',
+                  'Cadastrar',
                   style: GoogleFonts.dmSerifDisplay(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
               TextField(
                 controller: _emailController,
                 decoration: const InputDecoration(
-                  labelText: 'Email',
+                  labelText: 'Digite seu email',
                   labelStyle: TextStyle(color: Color(0xff000000)),
                   border: OutlineInputBorder(),
                 ),
@@ -89,7 +89,7 @@ class _RegisterPageState extends State<RegisterPage> {
               TextField(
                 controller: _passwordController,
                 decoration: const InputDecoration(
-                  labelText: 'Password',
+                  labelText: 'Digite sua senha',
                   labelStyle: TextStyle(color: Color(0xff000000)),
                   border: OutlineInputBorder(),
                 ),
@@ -101,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ElevatedButton(
                 onPressed: _login,
                 child: const Text(
-                  'Login',
+                  'Cadastro',
                   style: TextStyle(color: Colors.black),
                 ),
                 style: ElevatedButton.styleFrom(
@@ -114,13 +114,10 @@ class _RegisterPageState extends State<RegisterPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text('Não tem um cadastro?'),
-                  TextButton(
-                      onPressed: () {},
-                      child: const Text(
-                        'Cadastre-se',
-                        style: TextStyle(color: Colors.blue),
-                      ))
+                  const Text('Pokémon! Temos que pegar'),
+                  const SizedBox(
+                    height: 32,
+                  ),
                 ],
               )
             ],
